@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### NEXT 공식문서를 보며 개념을 익히기 위해 만든 미니게임 웹사이트입니다!
 
-## Getting Started
+게임하러가기
 
-First, run the development server:
+1. up down
+2. 숫자야구
+3. 땅따먹기
+4. 다이아몬드게임
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 프로젝트를 하며 학습한 NEXT의 개념을 기록합니다. 잘못된 부분이 있다면 PR 해주세요!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 1. Client-Side Navigation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Next는 서버에서 렌더링 된 페이지를 받아오는 Server-Side-Rendering 언어이다.
+> 하지만 Next의 Link 컴포넌트는 Client-side Navigation 을 지원하게 만즐어준다.
+> Link 컴포넌트가 브라우저의 ViewPort에 들어오는 순간 Next는 자동적으로 linked된 페이지를 prefetch한다.
+> 이후 Link 컴포넌트 클릭 시 이미 로딩된 데이터들만 부분적으로 바꿔준다.
+> 따라서 Next는 최초 1회에 한해서 서버에서 렌더링된 페이지를 받아오는 SSR로 동작하고, 이후에 브라우저에서 미리 로딩된 코드를 교체해주며, 자동으로 Code Splitting 해주어 빠르게 동작한다.
