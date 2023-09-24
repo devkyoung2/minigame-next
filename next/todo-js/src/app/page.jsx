@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.wrapper}>
       <div>Welcome Kyoung's MiniGame World!</div>
 
-      {/* <Link href='updown'>
+      <Link href='updown'>
         <div>
           <Image
             src='/images/profile.jpg' // Route of the image file
@@ -17,7 +17,7 @@ export default function Home() {
           ></Image>
           <p>🍀 Get Up&Down 🍀</p>
         </div>
-      </Link> */}
+      </Link>
 
       {/* <Link href='updown'>🍀 Get NumberBaseBall 🍀</Link>
       <Link href='updown'>🍀 Get FindBomb 🍀</Link>
