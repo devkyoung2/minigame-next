@@ -9,12 +9,12 @@ export default function Home() {
 
       <Link href='updown'>
         <div>
-          <Image
+          {/* <Image
             src='/images/profile.jpg' // Route of the image file
             height={144} // Desired size with correct aspect ratio
             width={144} // Desired size with correct aspect ratio
             alt='Your Name'
-          ></Image>
+          ></Image> */}
           <p>🍀 Get Up&Down 🍀</p>
         </div>
       </Link>
