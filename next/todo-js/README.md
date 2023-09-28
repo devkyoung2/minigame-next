@@ -29,3 +29,9 @@
 > Pre-loading : 브라우저에게 특정 리소스를 미리 로드하도록 명시적으로 지시하는것 을 의미한다. link태그의 rel 속성값에 preload를 사용하면 리소스를 미리 받아올 수 있다.
 
 > Pre-rendering : 사용자가 페이지를 요청하기 전에 서버 또는 빌드 시간에 미리 렌더링 하는것을 의미한다. 즉, 페이지를 미리 렌더링해 초기 로딩 속도를 향상 시키는 것을 의미. next는 기본적으로 모든 페이지를 pre-rendering한다.
+
+#### Next.js의 Client Rendering과 Server Rendering
+
+> Client Rendering :
+
+![Alt text](image.png)

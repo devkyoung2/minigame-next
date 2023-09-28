@@ -1,1 +1,23 @@
+@font-face {
+  font-family: "chab";
+  src: url("/fonts/chab.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bitbit";
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
+    url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
+}
 /* 변수 넣을 예정 */
+:root {
+  --color-dark-pink: #eb9f9f;
+  --color-light-pink: #f1bbba;
+  --color-dark-beige: #f8ecc9;
+  --color-light-beige: #fffaea;
+  --color-dark-gray: #5e5850;
+  --color-light-gray: #a79c8e;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --font-chab: chab;
+  --font-bitbit: bitbit;
+}
