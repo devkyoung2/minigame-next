@@ -1,6 +1,5 @@
 import "@/styles/variable.css";
 import "@/styles/globals.css";
-import "@/styles/animations.css";
 
 export const metadata = {
   title: "Kyoung2 MiniGame Web",
@@ -11,7 +10,7 @@ const style = {
   margin: "0px",
   width: "100vw",
   height: "100vh",
-  background: "var(--color-light-gray)",
+  background: "var(--color-light-brown)",
 };
 
 export default function RootLayout({ children }) {
