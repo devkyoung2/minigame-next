@@ -1,4 +1,4 @@
-import styles from "./game.module.css";
+import styles from "./game.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 

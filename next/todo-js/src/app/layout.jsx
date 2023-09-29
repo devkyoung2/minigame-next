@@ -1,5 +1,5 @@
-import "@/styles/variable.css";
-import "@/styles/globals.css";
+import "@/styles/variable.scss";
+import "@/styles/globals.scss";
 
 export const metadata = {
   title: "Kyoung2 MiniGame Web",

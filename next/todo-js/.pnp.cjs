@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["clsx", "npm:2.0.0"],\
             ["eslint", "npm:8.49.0"],\
             ["eslint-config-next", "virtual:12e1f3057f08f4a83cbe3116e2adc7bdbc35ba4eff0959bc93ac73ce5ebc84a9dea35337d9051b612bd921cc428dea8c8d6659be5da6e7a2695eef269cca4d94#npm:13.5.2"],\
             ["next", "virtual:12e1f3057f08f4a83cbe3116e2adc7bdbc35ba4eff0959bc93ac73ce5ebc84a9dea35337d9051b612bd921cc428dea8c8d6659be5da6e7a2695eef269cca4d94#npm:13.5.2"],\
@@ -924,6 +925,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/client-only-npm-0.0.1-07d3e9505c-0c16bf660d.zip/node_modules/client-only/",\
           "packageDependencies": [\
             ["client-only", "npm:0.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["clsx", [\
+        ["npm:2.0.0", {\
+          "packageLocation": "./.yarn/cache/clsx-npm-2.0.0-afafbbe44a-a2cfb2351b.zip/node_modules/clsx/",\
+          "packageDependencies": [\
+            ["clsx", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4012,6 +4022,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["todo-js", "workspace:."],\
+            ["clsx", "npm:2.0.0"],\
             ["eslint", "npm:8.49.0"],\
             ["eslint-config-next", "virtual:12e1f3057f08f4a83cbe3116e2adc7bdbc35ba4eff0959bc93ac73ce5ebc84a9dea35337d9051b612bd921cc428dea8c8d6659be5da6e7a2695eef269cca4d94#npm:13.5.2"],\
             ["next", "virtual:12e1f3057f08f4a83cbe3116e2adc7bdbc35ba4eff0959bc93ac73ce5ebc84a9dea35337d9051b612bd921cc428dea8c8d6659be5da6e7a2695eef269cca4d94#npm:13.5.2"],\

@@ -1,5 +1,6 @@
-@import url("/src/styles/animations.css");
-@import "@/styles/animations.css";
+// @import url("/src/styles/animations.scss");
+@import "@/styles/animations.scss";
+@import "@/styles/mixins.scss";
 
 .game {
   display: flex;
@@ -14,14 +15,13 @@
   border-radius: 15px;
 }
 
-.game:hover {
-  animation: rotate 5s infinite;
-  background-color: pink;
-}
+// .game:hover {
+//   animation: rotate 5s infinite;
+//   background-color: pink;
+// }
 
 .gameimg {
   border-radius: 100%;
-  animation: rotate 0.4s linear infinite;
 }
 .gametitle {
   color: var(--color-dark-brown);

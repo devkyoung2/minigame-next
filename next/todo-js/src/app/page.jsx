@@ -1,4 +1,5 @@
-import styles from "./page.module.css";
+import cx from "clsx";
+import styles from "./page.module.scss";
 import Game from "@/components/game";
 
 // M(data)
@@ -14,7 +15,7 @@ export default function Home() {
       <div className={styles.title}>Welcome!</div>
       <div className={styles.title}>
         <span>Kyoung's</span>
-        <span className={styles.title_point}> MiniGame</span>
+        <span className={cx(styles.title, styles.title_point)}> MiniGame</span>
       </div>
       <div className={styles.gamelist}>
         {gamedata.map((game) => (
