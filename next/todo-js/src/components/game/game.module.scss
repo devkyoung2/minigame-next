@@ -1,30 +1,22 @@
-// @import url("/src/styles/animations.scss");
-@import "@/styles/animations.scss";
-@import "@/styles/mixins.scss";
+@import "@/styles/animations";
+@import "@/styles/mixins";
 
 .game {
-  display: flex;
-  flex-direction: column;
+  @include center(column);
+  @include wh-full;
   justify-content: space-evenly;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: var(--color-white);
   border-radius: 15px;
-}
-
-// .game:hover {
-//   animation: rotate 5s infinite;
-//   background-color: pink;
-// }
-
-.gameimg {
-  border-radius: 100%;
-}
-.gametitle {
-  color: var(--color-dark-brown);
-  font-size: 25px;
-  font-family: var(--font-bitbit);
+  background-color: var(--color-white);
+  &:hover {
+    .img {
+      animation: rotate 10s linear infinite;
+    }
+  }
+  .img {
+    border-radius: 100%;
+  }
+  .title {
+    font: 25px var(--font-bitbit);
+    color: var(--color-dark-brown);
+  }
 }

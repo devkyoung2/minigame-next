@@ -5,8 +5,8 @@
   @include m.wh-full;
   .title {
     font: 60px var(--font-chab);
+    text-shadow: 2px 2px 4px var(--color-gray2);
     color: var(--color-dark-beige);
-    text-shadow: 2px 2px 4px var(--color-gray);
   }
   .title_point {
     color: var(--color-light-pink);
@@ -14,7 +14,7 @@
 
   .gamelist {
     @include m.grid;
-    @include m.whmp(70%, 40%, 40px, 40px);
+    @include m.size(70%, 40%, 40px, 40px);
     border-radius: 15px;
     background-color: var(--color-light-beige);
   }

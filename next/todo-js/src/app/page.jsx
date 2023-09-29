@@ -4,10 +4,10 @@ import Game from "@/components/game";
 
 // M(data)
 const gamedata = [
-  { title: "", url: "" },
-  { title: "", url: "" },
-  { title: "", url: "" },
-  { title: "", url: "" },
+  { title: "updown", url: "/images/updown.jpg" },
+  { title: "a", url: "/images/game1.jpg" },
+  { title: "b", url: "/images/game2.jpg" },
+  { title: "c", url: "/images/game3.jpg" },
 ];
 export default function Home() {
   return (
@@ -18,8 +18,8 @@ export default function Home() {
         <span className={cx(styles.title, styles.title_point)}> MiniGame</span>
       </div>
       <div className={styles.gamelist}>
-        {gamedata.map((game) => (
-          <Game></Game>
+        {gamedata.map((game, index) => (
+          <Game props={game} key={index}></Game>
         ))}
       </div>
     </main>
