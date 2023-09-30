@@ -1,0 +1,15 @@
+@import "@/styles/mixins";
+
+.wrapper {
+  @include center(row);
+  @include size(36px, 36px, 10px, 3px);
+  font-size: 32px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+  &:hover {
+    background-color: var(--color-light-beige);
+    opacity: 20%;
+  }
+}

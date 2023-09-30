@@ -1,7 +1,7 @@
 @import "@/styles/animations";
 @import "@/styles/mixins";
 
-.game {
+.wrapper {
   @include center(column);
   @include wh-full;
   justify-content: space-evenly;
@@ -9,7 +9,7 @@
   background-color: var(--color-white);
   &:hover {
     .img {
-      animation: rotate 10s linear infinite;
+      animation: rotate 5s linear infinite;
     }
   }
   .img {

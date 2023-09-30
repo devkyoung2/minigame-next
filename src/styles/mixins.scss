@@ -21,4 +21,9 @@
   height: $height;
   margin: $margin;
   padding: $padding;
+  box-sizing: border-box;
+}
+
+@mixin shadow {
+  box-shadow: rgba(63, 71, 77, 0.25) 0px 2px 10px;
 }

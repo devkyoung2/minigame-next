@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./game.module.scss";
+import styles from "./index.module.scss";
 
 export default function Game({ props }) {
   const { title, url } = props;
   return (
-    <Link href='updown'>
-      <div className={styles.game}>
+    <Link href='/updown'>
+      <div className={styles.wrapper}>
         <Image
           src={url}
           height={160}

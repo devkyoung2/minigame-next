@@ -1,6 +1,6 @@
 import cx from "clsx";
-import styles from "./page.module.scss";
-import Game from "@/components/game";
+import s from "./page.module.scss";
+import Game from "@/components/games";
 
 // M(data)
 const gamedata = [
@@ -11,13 +11,13 @@ const gamedata = [
 ];
 export default function Home() {
   return (
-    <main className={styles.wrapper}>
-      <div className={styles.title}>Welcome!</div>
-      <div className={styles.title}>
+    <main className={s.wrapper}>
+      <div className={s.title}>Welcome!</div>
+      <div className={s.title}>
         <span>Kyoung's</span>
-        <span className={cx(styles.title, styles.title_point)}> MiniGame</span>
+        <span className={cx(s.title, s.title_point)}> MiniGame</span>
       </div>
-      <div className={styles.gamelist}>
+      <div className={s.gamelist}>
         {gamedata.map((game, index) => (
           <Game props={game} key={index}></Game>
         ))}

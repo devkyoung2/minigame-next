@@ -1,8 +1,8 @@
-@use "src/styles/mixins" as m;
+@import "@/styles/mixins";
 
 .wrapper {
-  @include m.center(column);
-  @include m.wh-full;
+  @include center(column);
+  @include wh-full;
   .title {
     font: 60px var(--font-chab);
     text-shadow: 2px 2px 4px var(--color-gray2);
@@ -13,8 +13,8 @@
   }
 
   .gamelist {
-    @include m.grid;
-    @include m.size(70%, 40%, 40px, 40px);
+    @include grid;
+    @include size(70%, 40%, 40px, 40px);
     border-radius: 15px;
     background-color: var(--color-light-beige);
   }
