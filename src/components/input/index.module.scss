@@ -1,0 +1,24 @@
+@import "@/styles/mixins";
+.wrapper {
+  @include size(100%, 100%, 0, 0);
+  .input {
+    @include size(93%, 100%, 0, 0 20px 0 20px);
+    border: none;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    &:focus {
+      outline: 1px solid var(--color-dark-pink);
+      .button {
+        outline: 1px solid var(--color-dark-pink);
+      }
+    }
+  }
+  .button {
+    @include size(7%, 100%, 0, 0);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--color-dark-pink);
+    cursor: pointer;
+  }
+}
