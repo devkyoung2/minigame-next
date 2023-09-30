@@ -11,10 +11,12 @@
     background-color: var(--color-light-beige);
     border-radius: 15px;
     .board {
-      @include size(90%, 80%, 0, 0);
+      @include size(95%, 80%, 0, 0);
+      justify-content: start;
+      align-items: start;
     }
     .input {
-      @include size(90%, 10%, 10px 0 0 0, 0);
+      @include size(92%, 10%, 10px 0 0 0, 0);
     }
   }
 }

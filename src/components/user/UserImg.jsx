@@ -1,10 +1,15 @@
+import Image from "next/image";
 import styles from "./user.module.scss";
-export default function UserImg() {
+
+export default function UserImg(props) {
+  const { size, margin } = props;
   return (
-    <img
-      className={styles.user_img}
-      alt='profile'
+    <Image
+      alt='userimg'
       src='/images/blank-profile.jpg'
-    ></img>
+      width={size}
+      height={size}
+      style={{ margin: margin, borderRadius: "100%" }}
+    ></Image>
   );
 }

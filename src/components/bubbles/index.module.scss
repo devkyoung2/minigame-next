@@ -1,0 +1,14 @@
+@import "@/styles/mixins";
+.wrapper {
+  @include center(row);
+  justify-content: flex-start;
+  .bubbles {
+    margin-left: 10px;
+    .text {
+      @include size(auto, auto, 0, 8px 12px 8px 12px);
+      display: inline-block;
+      background-color: var(--color-white);
+      border-radius: 10px;
+    }
+  }
+}

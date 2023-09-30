@@ -1,6 +1,7 @@
 import cx from "clsx";
 import s from "./page.module.scss";
 import Game from "@/components/games";
+import Header from "@/components/headers";
 
 // M(data)
 const gamedata = [
@@ -12,6 +13,7 @@ const gamedata = [
 export default function Home() {
   return (
     <main className={s.wrapper}>
+      <Header></Header>
       <div className={s.title}>Welcome!</div>
       <div className={s.title}>
         <span>Kyoung's</span>

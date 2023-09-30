@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <main className={styles.wrapper}>
       <GoHome />
-      <UserImg />
+      <UserImg size={20} />
     </main>
   );
 }

@@ -1,11 +1,10 @@
-@import "@/styles/mixins";
-.user_img {
-  @include center(row);
-  @include size(36px, 36px, 10px, 0px);
-  cursor: pointer;
-  border: none;
-  border-radius: 100%;
-  &:hover {
-    @include shadow;
-  }
-}
+// @import "@/styles/mixins";
+// .user_img {
+//   @include center(row);
+//   cursor: pointer;
+//   border: none;
+//   border-radius: 100%;
+//   &:hover {
+//     @include shadow;
+//   }
+// }
