@@ -1,5 +1,9 @@
 @import "@/styles/mixins";
 
 .wrapper {
-  // @include center(column);
+  @include center(column);
+  @include size(100%, 100%, 0, 0);
+  .game {
+    @include size(90%, 95%, 0, 0);
+  }
 }

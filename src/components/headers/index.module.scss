@@ -1,6 +1,9 @@
 @import "@/styles/mixins";
+
 .wrapper {
   @include center(row);
   @include size(100%, 64px, 0, 10px);
+  position: fixed;
+  top: 0;
   justify-content: space-between;
 }
