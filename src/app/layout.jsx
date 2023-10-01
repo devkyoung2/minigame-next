@@ -10,12 +10,15 @@ const style = {
   margin: "0px",
   width: "100vw",
   height: "100vh",
-  background: "var(--color-light-brown)",
+  background: "var(--color-dark-beige)",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <head>
+        {/* <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script> */}
+      </head>
       <body style={style}>{children}</body>
     </html>
   );

@@ -3,7 +3,7 @@
 
 .wrapper {
   @include center(column);
-  @include wh-full;
+  @include size(100%, 85%, 0 10px, 15px);
   justify-content: space-evenly;
   border-radius: 15px;
   background-color: var(--color-white);
@@ -16,7 +16,8 @@
     border-radius: 100%;
   }
   .title {
+    @include center(row);
     font: 25px var(--font-bitbit);
-    color: var(--color-dark-brown);
+    color: var(--color-pink1);
   }
 }

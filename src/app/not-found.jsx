@@ -1,14 +1,32 @@
+import loading from "public/svgs/Spinner.gif";
+
 const iframeStyle = {
-  width: "100%",
-  height: "100vh",
+  width: "99%",
+  height: "99%",
   boxSizing: "border-box",
+};
+const style = {
+  // width: "99%",
+  // height: "99%",
+  // display: "flex",
+  // flexDirection: "column",
+  // justifyContent: "center",
+  // alignItems: "center",
+  // fontFamily: "var(--font-chab)",
+  // fontSize: "44px",
+  // color: "var(--color-pink1)",
+  // textShadow: "rgba(63, 71, 77, 0.25) 0px 2px 10px",
 };
 
 export default function NotFound() {
   return (
-    <iframe
-      style={iframeStyle}
-      src='https://lottie.host/?file=ab1ca2ec-16b6-4f7f-8721-535c7414bb20/uNpERSiGyn.json'
-    />
+    // <iframe
+    //   src='https://lottie.host/?file=d176744a-bc5f-4764-a79d-e3204e3334f1/J1SJBdsjst.json'
+    //   style={iframeStyle}
+    // ></iframe>
+    <div style={style}>
+      잠지만...잠지만요...
+      <img src={loading} alt='로딩중' width='5%' />
+    </div>
   );
 }

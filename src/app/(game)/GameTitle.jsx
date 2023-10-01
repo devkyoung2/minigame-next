@@ -6,9 +6,9 @@ const style = {
   height: "20%",
   font: "60px var(--font-chab)",
   textShadow: "2px 2px 4px var(--color-gray2)",
-  color: "var(--color-dark-beige)",
+  color: "var(--color-pink2)",
 };
 
 export default function GameTitle({ props }) {
-  return <div style={style}>{props}</div>;
+  return <p style={style}>{props}</p>;
 }

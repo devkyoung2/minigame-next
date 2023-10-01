@@ -8,9 +8,9 @@
     background-color: var(--color-white);
     cursor: pointer;
     &:focus {
-      outline: 1px solid var(--color-dark-pink);
+      outline: 1px solid var(--color-pink1);
       .button {
-        outline: 1px solid var(--color-dark-pink);
+        outline: 1px solid var(--color-pink1);
       }
     }
   }
@@ -18,7 +18,8 @@
     @include size(7%, 100%, 0, 0);
     border: none;
     border-radius: 0 15px 15px 0;
-    background-color: var(--color-dark-pink);
+    background-color: var(--color-pink1);
+    color: var(--color-light-beige);
     cursor: pointer;
   }
 }

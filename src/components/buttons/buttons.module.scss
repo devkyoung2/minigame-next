@@ -3,13 +3,19 @@
 .wrapper {
   @include center(row);
   @include size(36px, 36px, 10px, 3px);
+  @include shadow;
+  visibility: hidden;
   font-size: 32px;
   cursor: pointer;
   border: none;
   border-radius: 100%;
-  background-color: transparent;
+  background-color: var(--color-light-beige);
+
   &:hover {
     background-color: var(--color-light-beige);
     opacity: 20%;
   }
+}
+.visible {
+  visibility: visible;
 }

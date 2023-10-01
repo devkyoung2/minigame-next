@@ -1,5 +1,5 @@
 import cx from "clsx";
-import s from "./page.module.scss";
+import styles from "./page.module.scss";
 import Game from "@/components/games";
 import Header from "@/components/headers";
 
@@ -7,21 +7,22 @@ import Header from "@/components/headers";
 const gamedata = [
   { title: "updown", url: "/images/updown.jpg" },
   { title: "a", url: "/images/game1.jpg" },
-  { title: "b", url: "/images/game2.jpg" },
-  { title: "c", url: "/images/game3.jpg" },
+  { title: "a", url: "/images/game1.jpg" },
+  { title: "a", url: "/images/game1.jpg" },
+  { title: "a", url: "/images/game1.jpg" },
 ];
 export default function Home() {
   return (
-    <main className={s.wrapper}>
+    <main className={styles.wrapper}>
       <Header></Header>
-      <div className={s.title}>Welcome!</div>
-      <div className={s.title}>
+      <div className={styles.title}>Welcome!</div>
+      <div className={styles.title}>
         <span>Kyoung's</span>
-        <span className={cx(s.title, s.title_point)}> MiniGame</span>
+        <span className={cx(styles.title, styles.title_point)}> MiniGame</span>
       </div>
-      <div className={s.gamelist}>
+      <div className={styles.gamelist}>
         {gamedata.map((game, index) => (
-          <Game props={game} key={index}></Game>
+          <Games props={game} key={index}></Games>
         ))}
       </div>
     </main>

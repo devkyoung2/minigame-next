@@ -7,7 +7,7 @@ import GameTitle from "../GameTitle";
 export default function page({ props }) {
   return (
     <main className={styles.wrapper}>
-      <GameTitle props={"끝말잇기"} className={styles.title} />
+      <GameTitle props={"끝말 잇기"} className={styles.title} />
       <div className={styles.game}>
         <Progressbar />
         <div className={styles.board}>

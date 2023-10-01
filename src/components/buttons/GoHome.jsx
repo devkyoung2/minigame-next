@@ -1,9 +1,16 @@
-import styles from "./buttons.module.scss";
+"use client";
+import { useRouter } from "next/navigation";
 import { LeftArror } from "../../../public/svgs/svgs";
+import cx from "clsx";
+import styles from "./buttons.module.scss";
 
-export default function GoHome() {
+export default function GoHome({ visible }) {
+  const router = useRouter();
   return (
-    <button className={styles.wrapper}>
+    <button
+      className={cx(styles.wrapper, { [styles.visible]: visible })}
+      onClick={() => router.push("/")}
+    >
       <LeftArror className={styles.icons} />
     </button>
   );

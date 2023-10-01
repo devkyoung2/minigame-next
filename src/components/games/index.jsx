@@ -5,17 +5,17 @@ import styles from "./index.module.scss";
 export default function Game({ props }) {
   const { title, url } = props;
   return (
-    <Link href='/updown'>
-      <div className={styles.wrapper}>
+    <div className={styles.wrapper}>
+      <Link href='/updown'>
         <Image
           src={url}
-          height={160}
-          width={160}
+          height={140}
+          width={140}
           alt={title}
           className={styles.img}
         ></Image>
         <p className={styles.title}>{title}</p>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }
