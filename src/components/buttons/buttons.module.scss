@@ -2,20 +2,37 @@
 
 .wrapper {
   @include center(row);
-  @include size(36px, 36px, 10px, 3px);
-  @include shadow;
-  visibility: hidden;
-  font-size: 32px;
-  cursor: pointer;
   border: none;
-  border-radius: 100%;
-  background-color: var(--color-light-beige);
-
+  cursor: pointer;
+  background-color: transparent;
   &:hover {
-    background-color: var(--color-light-beige);
-    opacity: 20%;
+    @include shadow;
+    background-color: var(--color-pink1);
+    color: var(--color-white);
+    transition: 0.2s ease-in-out;
   }
 }
 .visible {
-  visibility: visible;
+  visibility: hidden;
+}
+.home {
+  @include size(40px, 40px, 5px, 3px);
+  border-radius: 100%;
+  color: var(--color-pink1);
+}
+.login {
+  @include size(80px, 40px, 5px 8px, 3px);
+  border-radius: 10px;
+}
+.gamestart {
+  @include size(240px, 70px, 0, 10px);
+  @include shadow;
+  font-size: 32px;
+  font-family: var(--font-bitbit);
+  border-radius: 40px;
+  background-color: var(--color-pink2);
+  p {
+    color: white;
+    text-shadow: rgba(63, 71, 77, 0.25) 0px 2px 10px;
+  }
 }

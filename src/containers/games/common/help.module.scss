@@ -1,0 +1,13 @@
+@import "@/styles/mixins";
+
+.wrapper {
+  @include center(column);
+  @include size(85%, 75%, 20px, 0);
+  position: relative;
+  background-color: var(--color-light-beige);
+  border-radius: 15px;
+  .help {
+    @include center(column);
+    @include size(85%, 60%, 20px, 0);
+  }
+}

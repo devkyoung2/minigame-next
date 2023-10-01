@@ -16,9 +16,6 @@ const style = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <head>
-        {/* <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script> */}
-      </head>
       <body style={style}>{children}</body>
     </html>
   );

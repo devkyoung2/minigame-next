@@ -3,8 +3,8 @@
 
 .wrapper {
   @include center(column);
-  @include size(100%, 85%, 0 10px, 15px);
-  justify-content: space-evenly;
+  @include size(400px, 85%, 0 10px, 0px);
+  justify-content: space-around;
   border-radius: 15px;
   background-color: var(--color-white);
   &:hover {

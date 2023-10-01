@@ -8,7 +8,7 @@ export default function GoHome({ visible }) {
   const router = useRouter();
   return (
     <button
-      className={cx(styles.wrapper, { [styles.visible]: visible })}
+      className={cx(styles.wrapper, styles.home, { [styles.visible]: visible })}
       onClick={() => router.push("/")}
     >
       <LeftArror className={styles.icons} />
