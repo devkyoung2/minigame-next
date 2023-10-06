@@ -2,6 +2,7 @@
 .wrapper {
   @include center(row);
   justify-content: flex-start;
+  margin-left: 10px;
   .bubbles {
     margin-left: 10px;
     .text {
@@ -10,5 +11,13 @@
       background-color: var(--color-white);
       border-radius: 10px;
     }
+  }
+}
+
+.reverse {
+  justify-content: flex-end;
+  margin-right: 10px;
+  .bubbles {
+    text-align: right;
   }
 }

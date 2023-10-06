@@ -11,12 +11,19 @@
     background-color: var(--color-light-beige);
     border-radius: 15px;
     .board {
-      @include size(95%, 80%, 0, 0);
+      @include size(100%, 80%, 0, 0);
+      @include scroll();
       justify-content: start;
       align-items: start;
-    }
-    .input {
-      @include size(92%, 10%, 10px 0 0 0, 0);
+      overflow-y: scroll;
     }
   }
+}
+.input {
+  @include size(92%, 10%, 10px 0 0 0, 0);
+}
+
+.error_input {
+  @include size(92%, 10%, 10px 0 0 0, 0);
+  outline: 1px solid var(--color-pink1);
 }

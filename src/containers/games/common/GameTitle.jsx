@@ -9,6 +9,6 @@ const style = {
   color: "var(--color-pink2)",
 };
 
-export default function GameTitle({ props }) {
-  return <p style={style}>{props}</p>;
+export default function GameTitle({ title }) {
+  return <p style={style}>{title}</p>;
 }

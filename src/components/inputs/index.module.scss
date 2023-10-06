@@ -1,6 +1,6 @@
 @import "@/styles/mixins";
+
 .wrapper {
-  @include size(100%, 100%, 0, 0);
   .input {
     @include size(93%, 100%, 0, 0 20px 0 20px);
     border: none;

@@ -46,3 +46,9 @@
 > Client Rendering :
 
 ![Alt text](image.png)
+
+## 삽질 기록
+
+1. api cors에러 해결법 (next.config)
+2. input에 스타일 주는법
+3. 스크롤시 바닥으로 포커싱
