@@ -11,6 +11,7 @@ export default function index(props) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (value === undefined) return;
     onSubmit(value);
     setValue();
   };

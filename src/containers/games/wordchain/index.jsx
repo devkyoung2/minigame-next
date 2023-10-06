@@ -13,26 +13,26 @@ export default function WordChain() {
   const [log, setLog] = useState(["단어"]);
   const [lastLetter, setLastLetter] = useState("어");
   const [validInput, setValidInput] = useState(false);
-  const current = useRef();
-  const scrollToBottom = () => {
-    current.current?.scrollIntoView({ behaviot: "smooth" });
-  };
-  useEffect(() => {
-    scrollToBottom();
-  }, log);
-  const handleGameStart = () => {
-    setInGame(true);
-  };
+  const inputRef = useRef(null);
+
+  const handleGameStart = () => setInGame(true);
+
   const handleWordSubmit = async (word) => {
     const isValidWord = await isCheckWord(lastLetter, word);
     if (isValidWord) {
-      setLog([...log, word]);
-      setLastLetter(word[word.length - 1]);
-      setValidInput(true);
+      // 확인된 단어일때
+      setLog([...log, word]); // 단어 log에 추가
+      setLastLetter(word[word.length - 1]); // 마지막 단어 세팅
+      setValidInput(true); //인풋창 O
     } else {
-      setValidInput(false);
+      setValidInput(false); // 인풋창 X
     }
   };
+
+  useEffect(() => {
+    inputRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [log]);
+
   return (
     <main className={styles.wrapper}>
       <GameTitle title={"끝말 잇기"} className={styles.title} />
@@ -46,13 +46,13 @@ export default function WordChain() {
                 key={index}
                 myturn={log.indexOf(data) % 2 === 1}
                 text={data}
-                ref={log.length - 1 === index && current}
+                ref={inputRef}
               />
             ))}
           </div>
           <Input
             type='wordChain'
-            style={validInput ? styles.error_input : styles.input}
+            style={validInput ? styles.input : styles.error_input}
             onSubmit={handleWordSubmit}
             placeholder={
               lastLetter && `'${lastLetter}' 자로 시작하는 단어를 입력하세요!`
