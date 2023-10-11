@@ -18,12 +18,13 @@ export default function WordChain() {
   const handleGameStart = () => setInGame(true);
 
   const handleWordSubmit = async (word) => {
-    const isValidWord = await isCheckWord(lastLetter, word);
-    if (isValidWord) {
+    const isValidWord = await isCheckWord(lastLetter, word, wordLog);
+    if (isValidWord === true) {
       // 확인된 단어일때
       setWordLog([...wordLog, word]); // 단어 log에 추가
       setLastLetter(word[word.length - 1]); // 마지막 단어 세팅
       setValidInput(true); //인풋창 O
+    } else if (isValidWord === "USED_WORD") {
     } else {
       setValidInput(false); // 인풋창 X
     }
