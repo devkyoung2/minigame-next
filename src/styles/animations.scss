@@ -7,3 +7,12 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes vibration {
+  0% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}

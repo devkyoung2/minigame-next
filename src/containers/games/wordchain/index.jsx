@@ -10,9 +10,9 @@ import styles from "./index.module.scss";
 
 export default function WordChain() {
   const [inGame, setInGame] = useState(false);
-  const [log, setLog] = useState(["단어"]);
+  const [wordLog, setWordLog] = useState(["단어"]);
   const [lastLetter, setLastLetter] = useState("어");
-  const [validInput, setValidInput] = useState(false);
+  const [validInput, setValidInput] = useState(true);
   const inputRef = useRef(null);
 
   const handleGameStart = () => setInGame(true);
@@ -21,7 +21,7 @@ export default function WordChain() {
     const isValidWord = await isCheckWord(lastLetter, word);
     if (isValidWord) {
       // 확인된 단어일때
-      setLog([...log, word]); // 단어 log에 추가
+      setWordLog([...wordLog, word]); // 단어 log에 추가
       setLastLetter(word[word.length - 1]); // 마지막 단어 세팅
       setValidInput(true); //인풋창 O
     } else {
@@ -31,28 +31,28 @@ export default function WordChain() {
 
   useEffect(() => {
     inputRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [log]);
-
+  }, [wordLog]);
+  useEffect(() => {}, [validInput]);
   return (
     <main className={styles.wrapper}>
-      <GameTitle title={"끝말 잇기"} className={styles.title} />
+      <GameTitle title={"끝말 잇기"} />
       {inGame || <Help onClick={handleGameStart} />}
-      {!inGame || (
+      {inGame && (
         <div className={styles.game}>
           <Progressbar />
           <div className={styles.board}>
-            {log.map((data, index) => (
+            {wordLog.map((word, index) => (
               <Bubble
                 key={index}
-                myturn={log.indexOf(data) % 2 === 1}
-                text={data}
+                myturn={wordLog.indexOf(word) % 2 === 1}
+                text={word}
                 ref={inputRef}
               />
             ))}
           </div>
           <Input
-            type='wordChain'
-            style={validInput ? styles.input : styles.error_input}
+            style={styles.input}
+            isValid={validInput}
             onSubmit={handleWordSubmit}
             placeholder={
               lastLetter && `'${lastLetter}' 자로 시작하는 단어를 입력하세요!`

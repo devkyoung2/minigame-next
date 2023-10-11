@@ -4,7 +4,7 @@ import cx from "clsx";
 import styles from "./index.module.scss";
 
 export default function index(props) {
-  const { style, onSubmit, placeholder } = props;
+  const { style, isValid, onSubmit, placeholder } = props;
   const [value, setValue] = useState();
   const handleInputChange = (e) => {
     setValue(e.target.value);
@@ -24,7 +24,8 @@ export default function index(props) {
       <input
         type='text'
         placeholder={placeholder}
-        className={styles.input}
+        className={cx(styles.input, { [styles.invalid_input]: !isValid })}
+        // className={cx(styles.input, isValid || styles.invalid_input)}
         value={value || ""}
         onChange={handleInputChange}
       ></input>

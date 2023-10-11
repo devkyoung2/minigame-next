@@ -17,13 +17,8 @@
       align-items: start;
       overflow-y: scroll;
     }
+    .input {
+      @include size(92%, 10%, 10px 0 0 0, 0);
+    }
   }
-}
-.input {
-  @include size(92%, 10%, 10px 0 0 0, 0);
-}
-
-.error_input {
-  @include size(92%, 10%, 10px 0 0 0, 0);
-  outline: 1px solid var(--color-pink1);
 }
